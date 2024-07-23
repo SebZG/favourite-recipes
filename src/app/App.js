@@ -1,6 +1,6 @@
 import '../App.css';
 
-// import { SearchBar} from "../features/searchBar/SearchBar.jsx";
+import SearchBar from "../features/searchBar/SearchBar.jsx";
 import FavoriteRecipes from "../features/favoriteRecipes/FavoriteRecipes.jsx";
 import AllRecipes from "../features/allRecipes/AllRecipes.jsx";
 
@@ -21,7 +21,7 @@ function App({ state, dispatch }) {
 	return (
 		<main>
 			<section>
-				{/* TODO: Add search bar */}
+				<SearchBar searchTerm={state.searchTerm} dispatch={dispatch} />
 			</section>
 			<section>
 				<FavoriteRecipes
