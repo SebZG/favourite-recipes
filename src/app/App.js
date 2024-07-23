@@ -1,7 +1,7 @@
 import '../App.css';
 
 // import { SearchBar} from "../features/searchBar/SearchBar.jsx";
-// import FavoriteRecipes from "../features/favoriteRecipes/FavoriteRecipes.jsx";
+import FavoriteRecipes from "../features/favoriteRecipes/FavoriteRecipes.jsx";
 import AllRecipes from "../features/allRecipes/AllRecipes.jsx";
 
 import { getFilteredRecipes } from '../utilities/getFilteredRecipes.js';
@@ -13,13 +13,21 @@ function App({ state, dispatch }) {
 		state.searchTerm
 	);
 
+	const visibleFavoriteRecipes = getFilteredRecipes(
+		state.favoriteRecipes,
+		state.searchTerm
+	);
+
 	return (
 		<main>
 			<section>
 				{/* TODO: Add search bar */}
 			</section>
 			<section>
-				{/* TODO: Add favorite recipes */}
+				<FavoriteRecipes
+					favoriteRecipes={visibleFavoriteRecipes}
+					dispatch={dispatch}
+				/>
 			</section>
 			<hr />
 			<section>
