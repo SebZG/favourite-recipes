@@ -12,9 +12,9 @@ export const allRecipesReducer = (allRecipes = initialState, action) => {
    switch (action.type) {
       case "allRecipes/LOAD_DATA":
          return action.payload;
-      case "favoriteRecipes/ADD_FAVOURITE":
+      case "favoriteRecipes/ADD_FAVORITE":
          return allRecipes.filter(recipe => recipe.id !== action.payload.id);
-      case "favoriteRecipes/REMOVE_FAVOURITE":
+      case "favoriteRecipes/REMOVE_FAVORITE":
          return [...allRecipes, action.payload];
       default:
          return allRecipes;
