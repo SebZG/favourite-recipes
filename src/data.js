@@ -8,7 +8,7 @@ const allRecipesData = [
    { id: 6, name: "Sancocho", img: "./images/sancocho.jpeg" },
    { id: 7, name: "Arepa", img: "./images/arepa.jpg" },
    { id: 8, name: "Bandeja Paisa", img: "./images/bandeja-paisa.jpg" },
-   { id: 9. name: "Kebab", img: "./images/kebab.jpg" }
+   { id: 9, name: "Kebab", img: "./images/kebab.jpg" }
 ]
 
 export default allRecipesData;
