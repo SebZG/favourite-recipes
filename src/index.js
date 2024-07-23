@@ -11,7 +11,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const render = () => {
 	root.render(
 		<React.StrictMode>
-			<App state={store.getState()} dispatch={store.dispatch} />
+			<App
+				state={store.getState()}
+				dispatch={store.dispatch}
+			/>
 		</React.StrictMode>
 	);
 }
