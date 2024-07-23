@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { addRecipe } from "../favoriteRecipes/favoriteRecipesSlice";
 import { loadData } from "./allRecipesSlice";
 
-import FavoriteButton from "../../components/FavouriteButton";
+import FavoriteButton from "../../components/FavoriteButton";
 import Recipe from "../../components/Recipe";
 
 const favoriteIconURL = "https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/favorite.svg"
@@ -14,7 +14,7 @@ const AllRecipes = ({ allRecipes, dispatch }) => {
       dispatch(loadData());
    }, []);
 
-   const onAddRecipeHandlder = (recipe) => {
+   const onAddRecipeHandler = (recipe) => {
       dispatch(addRecipe(recipe));
    }
 
@@ -23,7 +23,7 @@ const AllRecipes = ({ allRecipes, dispatch }) => {
          {allRecipes.map(recipe => (
             <Recipe key={recipe.id} recipe={recipe}>
                <FavoriteButton
-                  onClickHandler={() => onAddRecipeHandlder(recipe)}
+                  onClickHandler={() => onAddRecipeHandler(recipe)}
                   icon={favoriteIconURL}
                >
                   Add to Favorites
