@@ -1,13 +1,13 @@
 export const setSearchBar = (term) => {
    return {
-      type: "searchTerm/SET_SEARCH_TERM",
+      type: "searchBar/SET_SEARCH_TERM",
       payload: term
    }
 }
 
 export const clearSearchBar = () => {
    return {
-      type: "searchTerm/CLEAR_SEARCH_TERM",
+      type: "searchBar/CLEAR_SEARCH_TERM",
    }
 }
 

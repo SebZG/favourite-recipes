@@ -1,9 +1,10 @@
 import { setSearchBar, clearSearchBar } from './searchBarSlice.js';
 
-const searchIconUrl = 'https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/search.svg'
-const clearIconUrl = 'https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/clear.svg'
+const searchIconURL = 'https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/search.svg'
+const clearIconURL = 'https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/clear.svg'
 
 const SearchBar = ({ searchTerm, dispatch }) => {
+   console.log(searchTerm);
 
    const onSearchHandler = (e) => {
       const userInput = e.target.value;
@@ -16,7 +17,7 @@ const SearchBar = ({ searchTerm, dispatch }) => {
 
    return (
       <div id="search-container">
-         <img id="search-icon" alt="" src={searchIconUrl} />
+         <img id="search-icon" alt="" src={searchIconURL} />
          <input
             id="search"
             type="text"
@@ -30,7 +31,7 @@ const SearchBar = ({ searchTerm, dispatch }) => {
                type="button"
                id="search-clear-button"
             >
-               <img src={clearIconUrl} alt="" />
+               <img src={clearIconURL} alt="" />
             </button>
          )}
       </div>
