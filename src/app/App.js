@@ -24,6 +24,7 @@ function App({ state, dispatch }) {
 				<SearchBar searchTerm={state.searchTerm} dispatch={dispatch} />
 			</section>
 			<section>
+				<h2>Favorite Recipes</h2>
 				<FavoriteRecipes
 					favoriteRecipes={visibleFavoriteRecipes}
 					dispatch={dispatch}
