@@ -4,7 +4,7 @@ const searchIconURL = 'https://static-assets.codecademy.com/Courses/Learn-Redux/
 const clearIconURL = 'https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/clear.svg'
 
 const SearchBar = ({ searchTerm, dispatch }) => {
-   console.log(searchTerm);
+   // console.log(searchTerm);
 
    const onSearchHandler = (e) => {
       const userInput = e.target.value;
@@ -25,7 +25,7 @@ const SearchBar = ({ searchTerm, dispatch }) => {
             onChange={onSearchHandler}
             placeholder="Search recipes"
          />
-         {searchTerm && (
+         {searchTerm.length > 0 && (
             <button
                onClick={onClearSearchHandler}
                type="button"

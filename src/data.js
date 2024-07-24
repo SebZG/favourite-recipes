@@ -1,8 +1,8 @@
 const allRecipesData = [
-   { id: 0, name: "Burger", img: "./images/burger.jpeg" },
+   { id: 0, name: "Burger", img: "./images/Burger.jpeg" },
    { id: 1, name: "Chicken Wings", img: "./images/chicken-wings.jpeg" },
    { id: 2, name: "Empanada", img: "./images/empanada.jpeg" },
-   { id: 3, name: "Fish 'n' Chips", img: "./images/fish-and-chips.jpeg" },
+   { id: 3, name: "Fish n Chips", img: "./images/fish-and-chips.jpeg" },
    { id: 4, name: "Pasta", img: "./images/pasta.jpeg" },
    { id: 5, name: "Pizza", img: "./images/pizza.jpeg" },
    { id: 6, name: "Sancocho", img: "./images/sancocho.jpeg" },

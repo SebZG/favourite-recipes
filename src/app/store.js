@@ -7,5 +7,5 @@ import { searchBarReducer } from "../features/searchBar/searchBarSlice.js";
 export const store = createStore(combineReducers({
    allRecipes: allRecipesReducer,
    favoriteRecipes: favoriteRecipesReducer,
-   searchBar: searchBarReducer
+   searchTerm: searchBarReducer
 }));
