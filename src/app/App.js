@@ -32,6 +32,7 @@ function App({ state, dispatch }) {
 			</section>
 			<hr />
 			<section>
+				<h2>All Recipes</h2>
 				<AllRecipes allRecipes={visibleAllRecipes} dispatch={dispatch} />
 			</section>
 		</main>
