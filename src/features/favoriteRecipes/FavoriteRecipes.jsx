@@ -1,7 +1,7 @@
+import { removeRecipe } from "./favoriteRecipesSlice.js";
+
 import FavoriteButton from "../../components/FavoriteButton.jsx";
 import Recipe from "../../components/Recipe.jsx";
-
-import { removeRecipe } from "./favoriteRecipesSlice.js";
 
 const unfavoriteIconURL = "https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/unfavorite.svg";
 
